@@ -4,8 +4,13 @@ const outputLabel = document.getElementById('output');
 const inputLabel = document.getElementById('input');
 const musicPaths = [
     './music/fortniteBoogie.mp3',
-    './music/fortniteDefaultDance.mp3',
     './music/bara-bara-bere-bere.mp3',
+    './music/aliAintro.mp3',
+    './music/marioKart.mp3',
+    './music/ncs1.mp3',
+    './music/ratDance.mp3',
+    './music/sigmaBoy.mp3',
+    './music/tutorialMusic.mp3'
 ];
 const gifPaths = [
     './gifs/BD1.gif',
@@ -15,17 +20,50 @@ const gifPaths = [
     './gifs/BD5.gif',
     './gifs/BD6.gif',
     './gifs/BD7.gif',
-    './gifs/BD8.gif'
+    './gifs/BD8.gif',
+    './gifs/BD9.gif',
+    './gifs/BD10.gif',
+    './gifs/BD11.gif',
+
 ];
 const responseOptions = [
-    '  Good question. Here let me break it down for you  ',
-    '  I understand why you would be confused. Let me break it down for you  ',
-    '  I can see why that would be confusing. Here let me break it down for you  ',
-    '  Here let me break it down for you  ',
-    '  I understand why you would be confused. Let me break it down for you  ',
-    '  That is a verry good question. I will now break it down for you  ',
-    '  I wanna boogie!!!  ',
-    '  Sorry. I cant answer that. But i can breakdance!!!  '
+    'Good question. Here let me break it down for you.',
+    'I understand why you would be confused. Let me break it down for you.',
+    'I can see why that would be confusing. Here let me break it down for you.',
+    'Here let me break it down for you.',
+    'I understand why you would be confused. Let me break it down for you.',
+    'That is a verry good question. I will now break it down for you.',
+    'I wanna boogie!!!.',
+    'Sorry. I cant answer that. But i can breakdance!!!.',
+    'What a wonderful question. I will now break it down for you.',
+    'Let me break it down for you.',
+    'I will now break it down for you.',
+    'Hmmmm great question. let me break it down so you can understand.',
+    'Let me break it down so you can understand it better.',
+    'I see. Perhaps this will help you understand.',
+    'Great question. Maby this will clear things up for you.',
+    'Good question. Perhaps this will make it more understandable.',
+    '........... I dont know how to answer that so i will just break dance instead.',
+    'It is actually a very simple answer. Let me break it down for you.',
+    'There is actually quite a simple solution to this. Let me break it down for you.',
+    'Let me simplify this for you. Here’s the breakdown.',
+    'Oh, I love this question! Let me break it down for you.',
+    'This might seem tricky, but I’ll break it down so it is easier to understand.',
+    'Interesting question! Let me explain it in the only way that makes sense.',
+    'Let me unravel this mystery for you.',
+    'I’ve got this! Let me break it down for you.',
+    'This is a fun one! Let me explain it in the only way i know.',
+    'Let me decode this for you in the most stylish way possible.',
+    'Ah, a classic question! Let me break it down for you.',
+    'This deserves a proper explanation. I will now break it down.',
+    'Let me make this crystal clear for you.',
+    'This is a great question! Let me show you the moves.',
+    'This might seem complex, but I’ll make it easy to understand using this method.',
+    'Let me break it down in a way that’s easy to grasp.',
+    'This is a good one! Let me break it down.',
+    'Let me make this as straightforward as possible.',
+    'Let me guide you through this with a clear explanation.',
+    'This diserves a proper explanation.',
 ];
 
 //listens for button press
@@ -94,10 +132,11 @@ function displaySoduko() {
     gifElement.style.objectFit = 'cover';
     gifElement.style.zIndex = '9999';
     document.body.appendChild(gifElement);
+    new Audio('./music/sad.mp3').play();
 
-    //Removes the gif after a few seconds
+    //Closes tab after a few seconds
     setTimeout(() => {
-        document.body.removeChild(gifElement);
+        window.close();
     }, 3500);
 }
 
