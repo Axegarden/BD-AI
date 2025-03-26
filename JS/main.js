@@ -3,19 +3,19 @@ const submitButton = document.getElementById('submit');
 const outputLabel = document.getElementById('output');
 const inputLabel = document.getElementById('input');
 const musicPaths = [
-    '../music/fortniteBoogie.mp3',
-    '../music/fortniteDefaultDance.mp3',
-    '../music/bara-bara-bere-bere.mp3',
+    './music/fortniteBoogie.mp3',
+    './music/fortniteDefaultDance.mp3',
+    './music/bara-bara-bere-bere.mp3',
 ];
 const gifPaths = [
-    '../gifs/BD1.gif',
-    '../gifs/BD2.gif',
-    '../gifs/BD3.gif',
-    '../gifs/BD4.gif',
-    '../gifs/BD5.gif',
-    '../gifs/BD6.gif',
-    '../gifs/BD7.gif',
-    '../gifs/BD8.gif'
+    './gifs/BD1.gif',
+    './gifs/BD2.gif',
+    './gifs/BD3.gif',
+    './gifs/BD4.gif',
+    './gifs/BD5.gif',
+    './gifs/BD6.gif',
+    './gifs/BD7.gif',
+    './gifs/BD8.gif'
 ];
 const responseOptions = [
     '  Good question. Here let me break it down for you  ',
@@ -82,7 +82,7 @@ function typeWriter(text, speed, playGif = false, soduko = false, index = 0) {
 //displays a gif of kermit the frog commiting soduko
 function displaySoduko() {
     const gifElement = document.createElement('img');
-    gifElement.src = '../gifs/kermitCommitingDie.gif';
+    gifElement.src = './gifs/kermitCommitingDie.gif';
     gifElement.style.position = 'fixed';
     gifElement.style.top = '0';
     gifElement.style.left = '0';
