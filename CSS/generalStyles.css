@@ -73,6 +73,7 @@ body{
     font-size: 15px;
     text-align: center;
     color: white;
+    display: block;
 }
 button{
     font-size: 15px;

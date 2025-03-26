@@ -30,14 +30,16 @@ const responseOptions = [
 
 //listens for button press
 submitButton.addEventListener('click', () => main());
+//listens for enter key press
 addEventListener('keydown', (event) => {
     if(event.key === 'Enter') main();
 });
 
 function main(){
-    outputLabel.textContent = '';//clears the output label
     if(!isWriting && inputLabel.value != ''){ // Use .value to check the input field
-        if(Math.floor(Math.random()*10)== 1){//randomly decides if the question was too difficult to answer
+        isWriting = true;
+        outputLabel.textContent = '';//clears the output label
+        if(Math.floor(Math.random()*20)== 1){//randomly decides if the question was too difficult to answer
             tooDifficult();
         }
         else{
@@ -52,7 +54,6 @@ function main(){
 
 //breaks it down
 function breakItDown() {
-    isWriting = true;
     const text = responseOptions[Math.floor(Math.random() * responseOptions.length)];
 
     typeWriter(text, 80, true, false);
@@ -60,7 +61,6 @@ function breakItDown() {
 
 //if the question was too difficult to answer
 function tooDifficult() {
-    isWriting = true;
     const text = '  Sorry, it was too difficult to explain. I will now kill myself  ';
 
     typeWriter(text, 80, false, true);
