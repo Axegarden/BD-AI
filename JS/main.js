@@ -72,6 +72,7 @@ submitButton.addEventListener('click', () => main());
 addEventListener('keydown', (event) => {
     if(event.key === 'Enter') main();
 });
+
 //ANCHOR - keyboard change
 inputLabel.addEventListener('focus', () => {
     document.body.classList.add('keyboard-active');
