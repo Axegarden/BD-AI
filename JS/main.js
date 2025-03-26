@@ -72,6 +72,15 @@ submitButton.addEventListener('click', () => main());
 addEventListener('keydown', (event) => {
     if(event.key === 'Enter') main();
 });
+//ANCHOR - keyboard change
+inputLabel.addEventListener('focus', () => {
+    document.body.classList.add('keyboard-active');
+});
+
+inputLabel.addEventListener('blur', () => {
+    document.body.classList.remove('keyboard-active');
+});
+//
 
 function main(){
     if(!isWriting && inputLabel.value != ''){ // Use .value to check the input field
