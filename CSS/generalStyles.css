@@ -1,13 +1,6 @@
 body{
     background-color: rgb(32, 32, 32);
 }
-/**ANCHOR - keyboar change css */
-body.keyboard-active {
-    overflow: hidden;
-    position: fixed;
-    width: 100%;
-}
-/** */
 .title{
     font-family: consolas;
     font-size: 70px;
