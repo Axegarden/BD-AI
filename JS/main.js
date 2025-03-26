@@ -30,6 +30,9 @@ const responseOptions = [
 
 //listens for button press
 submitButton.addEventListener('click', () => main());
+addEventListener('keydown', (event) => {
+    if(event.key === 'Enter') main();
+});
 
 function main(){
     outputLabel.textContent = '';//clears the output label
