@@ -40,7 +40,9 @@ body{
     margin-inline: auto;
 }
 .chatInput{
-    width: 1000px;
+    justify-self: center;
+    display: block;
+    width: 95%;
     height: 50px;
     padding: 10px;
     border-radius: 20px;
