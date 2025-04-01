@@ -158,12 +158,12 @@ function displayRandomGif(){
     gifElement.style.zIndex = '9999';
     document.body.appendChild(gifElement);
 
-    playRandomMusic(5000); // Ensure music always plays when a GIF is displayed
+    playRandomMusic(6000); // Ensure music always plays when a GIF is displayed
 
     //Removes the gif after a few seconds
     setTimeout(() => {
         document.body.removeChild(gifElement);
-    }, 5000);
+    }, 6000);
 }
 
 // Plays a random music track for a specified duration
